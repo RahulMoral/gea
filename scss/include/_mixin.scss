@@ -1,0 +1,24 @@
+@mixin font-Amiri-Regular {
+    font-family: 'Amiri', serif;
+    font-weight: 400;
+}
+@mixin font-Amiri-Bold {
+    font-family: 'Amiri', serif;
+    font-weight: 700;
+}
+@mixin font-Titilliumweb-Light {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+}
+@mixin font-Titilliumweb-Regular {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+}
+@mixin font-Titilliumweb-Semibold {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+}
+@mixin font-Titilliumweb-Bold {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}

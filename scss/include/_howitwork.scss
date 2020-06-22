@@ -1,0 +1,90 @@
+.howitworks{
+    padding-bottom: 60px;
+    padding-top: 60px;
+    .howitworks-items{
+        .howitworks-items-image{
+            background-color: #828282;
+            //border: 1px solid #828282;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            @include media-breakpoint-up(xl){
+                margin-bottom: 50px;
+            }
+        }
+        .howitworks-items-content{
+            margin-bottom: 30px;
+            @include media-breakpoint-up(xl){
+                margin-bottom: 50px;
+            }
+            .number{
+                color: #a5b6d2;
+                font-size: 27px;
+                @include font-Titilliumweb-Semibold;
+                line-height: 28px;
+                margin-bottom: 1rem;
+            }
+            h2{
+                color: $black;
+                font-size: 32px;
+                @include font-Titilliumweb-Bold;
+                line-height: 1.25;
+                margin-bottom: 1rem;
+            }
+            p{
+                color: #505050;
+                font-size: 16px;
+                @include font-Titilliumweb-Regular;
+                line-height: 1.75;
+            }
+        }
+        .cross-divider{
+            background-color: #d1d9eb;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            width: 1px;
+            @include media-breakpoint-down(sm){
+                display: none;
+            }
+            &:before{
+                background-color: #fafcff;
+                border: 1px solid #c2cadb;
+                border-radius: 50%;
+                content: '';
+                height: 36px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                transform: translateX(-50%);
+                width: 36px;
+            }
+            &:after{
+                background-color: #303d54;
+                border-radius: 50%;
+                content: '';
+                height: 6px;
+                left: 50%;
+                position: absolute;
+                top: 15px;
+                transform: translateX(-50%);
+                width: 6px;
+            }
+        }
+        &:nth-child(2n+2){
+            @include media-breakpoint-up(md){
+                flex-direction: row-reverse;
+            }
+            .howitworks-items-content{
+                @include media-breakpoint-up(md){
+                    text-align: right;
+                }
+            }
+        }
+        &:last-child{
+            .cross-divider{
+                background-color: transparent;
+            }
+        }
+    }
+}

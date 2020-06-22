@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Google fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,700;1,400&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet" />
+		<!-- Font awesome -->
+		<link rel="stylesheet" href="css/fontawesome.min.css" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/app.css" />
+
+		<title>GINOS ESTATE AGENTS | PROPERTY SEARCH RESULTS</title>
+	</head>
+	<body>
+		<div id="app">
+			<!-- Mobile header -->
+			<div class="mobile-menu">
+				<div class="mobile-header">Ginos Estate Agents</div>
+				<div class="mobile-body d-flex flex-column align-items-center">
+					<a href="javascript:void(0);" class="mobile-menu-item">Home</a>
+					<a href="javascript:void(0);" class="mobile-menu-item">Fees</a>
+					<a href="javascript:void(0);" class="mobile-menu-item">About Us</a>
+					<a href="javascript:void(0);" class="mobile-menu-item">Property Search</a>
+					<a href="javascript:void(0);" class="mobile-menu-item">How It Works</a>
+					<a href="javascript:void(0);" class="mobile-menu-item">Register</a>
+					<a href="javascript:void(0);" class="mobile-menu-item">Contact Us</a>
+					<a href="javascript:void(0);" class="mobile-menu-item valuation d-flex flex-row align-items-center justify-content-center">
+						<span>
+							<i class="far fa-home"></i>
+						</span>
+						<span>Free Valuation</span>
+					</a>
+				</div>
+				<div class="mobile-footer d-flex flex-column align-items-center">
+					<a href="mailto:sales@ginosproperties.co.uk" class="mobile-footer-item d-flex flex-row align-items-center">
+						<span>
+							<i class="fal fa-envelope"></i>
+						</span>
+						<span>sales@ginosproperties.co.uk</span>
+					</a>
+					<a href="tel:01172300125" class="mobile-footer-item d-flex flex-row align-items-center">
+						<span>
+							<i class="fal fa-mobile-android"></i>
+						</span>
+						<span>0117 230 0125</span>
+					</a>
+				</div>
+			</div>
+			<!-- Mobile header end -->
+
+			<!-- Page layout -->
+			<div class="page-wrapper">
+				<!-- Header Desktop -->
+				<header>
+					<section class="container-fluid main-menu">
+						<div class="row">
+							<div class="container">
+								<div class="row align-items-center justify-content-between align-items-lg-stretch">
+									<div class="navbar-action d-flex d-lg-none">
+										<button class="navbar-toggler" role="button" type="button">
+											<span></span>
+										</button>
+									</div>
+									<div class="site-logo">
+										<a class="d-block" href="index.html">
+											<img alt="" class="img-fluid d-block" src="images/gea-logo.png" />
+										</a>
+									</div>
+									<div class="site-header d-flex flex-column justify-content-between">
+										<div class="site-announcement-bar d-none d-lg-flex flex-row align-items-center justify-content-between">
+											<div class="announcement-bar-title">Ginos Estate Agents</div>
+											<div class="d-flex flex-row align-items-center top-contact">
+												<a href="mailto:sales@ginosproperties.co.uk" class="top-contact-item d-flex flex-row align-items-center">
+													<span>
+														<i class="fal fa-envelope"></i>
+													</span>
+													<span>sales@ginosproperties.co.uk</span>
+												</a>
+												<a href="tel:01172300125" class="top-contact-item d-flex flex-row align-items-center">
+													<span>
+														<i class="fal fa-mobile-android"></i>
+													</span>
+													<span>0117 230 0125</span>
+												</a>
+											</div>
+										</div>
+										<div class="site-navigation-bar d-flex flex-row align-items-center justify-content-between">
+											<ul class="navbar-nav d-none d-lg-flex flex-row">
+												<li class="nav-item active">
+													<a class="nav-link" href="index.html">Home</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="javascript:void(0);">Fees</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="javascript:void(0);">About Us</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="javascript:void(0);">Property Search</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="javascript:void(0);">How It Works</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="javascript:void(0);">Register</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="javascript:void(0);">Contact Us</a>
+												</li>
+											</ul>
+											<div class="navbar-button">
+												<a class="nav-button d-flex flex-row align-items-center justify-content-center" href="javascript:void(0);">
+													<span>
+														<i class="far fa-home"></i>
+													</span>
+													<span class="d-none d-lg-inline">Free Valuation</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="menubackdrop"></div>
+				</header>
+				<!-- Header Desktop end -->
+				<!-- Main Content -->
+				<main class="main-content">
+					<section class="container-fluid page-section property-search-results">
+						<div class="row">
+							<div class="container">
+								<div class="d-flex flex-wrap">
+									<div class="search-results-sidebar">
+										<ul class="nav nav-tabs" id="myTab" role="tablist">
+											<li class="nav-item" role="presentation">
+												<a class="nav-link active" id="listview-tab" data-toggle="tab" href="#listview" role="tab" aria-controls="listview" aria-selected="true">
+													<span><i class="fas fa-list"></i></span>
+													<span>List View</span>
+												</a>
+											</li>
+											<li class="nav-item" role="presentation">
+												<a class="nav-link" id="mapview-tab" data-toggle="tab" href="#mapview" role="tab" aria-controls="mapview" aria-selected="false">
+													<span><i class="fas fa-map-marked-alt"></i></span>
+													<span>Map View</span>
+												</a>
+											</li>
+										</ul>
+										<div class="results-searchform">
+											<button class="filter-button d-lg-none" role="button" type="button" id="filterButton">
+												<span><i class="fas fa-filter"></i></span>
+												<span>Filter</span>
+											</button>
+											<form class="searchform" action="" method="POST">
+												<div class="form-group">
+													<label class="control-label" for="">Location</label>
+													<div class="input-group">
+														<input type="search" name="" id="" class="form-control" placeholder="Start Typing" />
+														<div class="input-group-addon"><i class="fas fa-map-marker-alt"></i></div>
+													</div>
+												</div>
+												<div class="divider"></div>
+												<div class="row">
+													<div class="col-6">
+														<div class="form-group">
+															<label class="control-label" for="">Min Price</label>
+															<select class="form-control" id="" name="">
+																<option value="">Any</option>
+																<option value="1">100000</option>
+																<option value="2">200000</option>
+																<option value="3">300000</option>
+																<option value="4">400000</option>
+																<option value="5">500000</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-6">
+														<div class="form-group">
+															<label class="control-label" for="">Max Price</label>
+															<select class="form-control" id="" name="">
+																<option value="">Any</option>
+																<option value="1">100000</option>
+																<option value="2">200000</option>
+																<option value="3">300000</option>
+																<option value="4">400000</option>
+																<option value="5">500000</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="divider"></div>
+												<div class="row">
+													<div class="col-6">
+														<div class="form-group">
+															<label class="control-label" for="">Min Beds</label>
+															<select class="form-control" id="" name="">
+																<option value="">Any</option>
+																<option value="1">1</option>
+																<option value="2">2</option>
+																<option value="3">3</option>
+																<option value="4">4</option>
+																<option value="5">5</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-6">
+														<div class="form-group">
+															<label class="control-label" for="">Max Beds</label>
+															<select class="form-control" id="" name="">
+																<option value="">Any</option>
+																<option value="1">1</option>
+																<option value="2">2</option>
+																<option value="3">3</option>
+																<option value="4">4</option>
+																<option value="5">5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="divider"></div>
+												<div class="form-group">
+													<label class="control-label" for="">Property Type</label>
+													<div class="checkbox-group d-flex flex-column">
+														<label class="property-type-item" for="alltypes">
+															<span>All Types</span>
+															<input type="checkbox" name="alltypes" id="alltypes" hidden />
+															<span></span>
+														</label>
+														<label class="property-type-item" for="house">
+															<span>House</span>
+															<input type="checkbox" name="house" id="house" hidden />
+															<span></span>
+														</label>
+														<label class="property-type-item" for="bungalow">
+															<span>Bungalow</span>
+															<input type="checkbox" name="bungalow" id="bungalow" hidden />
+															<span></span>
+														</label>
+														<label class="property-type-item" for="flat">
+															<span>Flat</span>
+															<input type="checkbox" name="flat" id="flat" hidden />
+															<span></span>
+														</label>
+													</div>
+												</div>
+												<div class="divider"></div>
+												<div class="form-group">
+													<label class="property-type-item" for="includestc">
+														<span>Include STC?</span>
+														<input type="checkbox" name="includestc" id="includestc" hidden />
+														<span></span>
+													</label>
+												</div>
+												<div class="divider"></div>
+												<div class="form-group mb-0">
+													<button class="searchform-button" type="submit" role="button">
+														<span><i class="fas fa-retweet"></i></span>
+														<span>Update Results</span>
+													</button>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="search-results-content">
+										<div class="search-results--results d-flex flex-column flex-md-row justify-content-md-between">
+											<div class="results-text">Showing 1 - 15 of 250 results</div>
+											<div class="results-filter d-flex flex-row align-items-center">
+												<span>Sort by:</span>
+												<select name="" id="">
+													<option>Price Lowest</option>
+													<option>Price Highest</option>
+												</select>
+											</div>
+										</div>
+										<!-- Search results header -->
+										<div class="tab-content" id="myTabContent">
+											<div class="tab-pane fade show active" id="listview" role="tabpanel" aria-labelledby="listview-tab">
+												<div class="listview-property-items">
+													<div class="listview-card d-flex flex-wrap">
+														<div class="listview-card-image">
+															<img alt="" class="img-fluid d-block" src="https://loremflickr.com/320/240/forest" width="100%" />
+															<div class="d-flex flex-row listview-feature align-items-center justify-content-between">
+																<div class="listview-feature-item d-flex flex-row align-items-center">
+																	<span><i class="fal fa-bed"></i></span>
+																	<span>2</span>
+																</div>
+																<div class="listview-feature-item d-flex flex-row align-items-center">
+																	<span><i class="fal fa-bath"></i></span>
+																	<span>2</span>
+																</div>
+																<div class="listview-feature-item d-flex flex-row align-items-center">
+																	<span><i class="fal fa-couch"></i></span>
+																	<span>2</span>
+																</div>
+															</div>
+														</div>
+														<div class="listview-card-content">
+															<div class="listview-pricing">£875,000</div>
+															<div class="listview-location">Station Road, Backwell</div>
+															<p>A sensibly priced period first floor maisonette with allocated parking located just off the Boulevard and therefore very convenient for the town centre. This roomy property would be ideal for first time buyers or as an addition to your buy to let portfolio. (The property would achieve £650 per month = 6.5% yield at the asking price). A great opportunity to purchase a generously sized 2 bedroom property at an affordable price.</p>
+															<div class="d-flex flex-row justify-content-end">
+																<a class="view-details-link d-flex flex-row align-items-center" href="javascript:void(0)">
+																	<span>View Details</span>
+																	<span><i class="fal fa-angle-right"></i></span>
+																</a>
+															</div>
+														</div>
+													</div>
+													<!-- Each item -->
+													<div class="listview-card d-flex flex-wrap">
+														<div class="listview-card-image">
+															<img alt="" class="img-fluid d-block" src="https://loremflickr.com/320/240/forest" width="100%" />
+															<div class="d-flex flex-row listview-feature align-items-center justify-content-between">
+																<div class="listview-feature-item d-flex flex-row align-items-center">
+																	<span><i class="fal fa-bed"></i></span>
+																	<span>2</span>
+																</div>
+																<div class="listview-feature-item d-flex flex-row align-items-center">
+																	<span><i class="fal fa-bath"></i></span>
+																	<span>2</span>
+																</div>
+																<div class="listview-feature-item d-flex flex-row align-items-center">
+																	<span><i class="fal fa-couch"></i></span>
+																	<span>2</span>
+																</div>
+															</div>
+														</div>
+														<div class="listview-card-content">
+															<div class="listview-pricing">£875,000</div>
+															<div class="listview-location">Station Road, Backwell</div>
+															<p>A sensibly priced period first floor maisonette with allocated parking located just off the Boulevard and therefore very convenient for the town centre. This roomy property would be ideal for first time buyers or as an addition to your buy to let portfolio. (The property would achieve £650 per month = 6.5% yield at the asking price). A great opportunity to purchase a generously sized 2 bedroom property at an affordable price.</p>
+															<div class="d-flex flex-row justify-content-end">
+																<a class="view-details-link d-flex flex-row align-items-center" href="javascript:void(0)">
+																	<span>View Details</span>
+																	<span><i class="fal fa-angle-right"></i></span>
+																</a>
+															</div>
+														</div>
+													</div>
+													<!-- Each item -->
+													<div class="listview-card d-flex flex-wrap">
+														<div class="listview-card-image">
+															<img alt="" class="img-fluid d-block" src="https://loremflickr.com/320/240/forest" width="100%" />
+															<div class="d-flex flex-row listview-feature align-items-center justify-content-between">
+																<div class="listview-feature-item d-flex flex-row align-items-center">
+																	<span><i class="fal fa-bed"></i></span>
+																	<span>2</span>
+																</div>
+																<div class="listview-feature-item d-flex flex-row align-items-center">
+																	<span><i class="fal fa-bath"></i></span>
+																	<span>2</span>
+																</div>
+																<div class="listview-feature-item d-flex flex-row align-items-center">
+																	<span><i class="fal fa-couch"></i></span>
+																	<span>2</span>
+																</div>
+															</div>
+														</div>
+														<div class="listview-card-content">
+															<div class="listview-pricing">£875,000</div>
+															<div class="listview-location">Station Road, Backwell</div>
+															<p>A sensibly priced period first floor maisonette with allocated parking located just off the Boulevard and therefore very convenient for the town centre. This roomy property would be ideal for first time buyers or as an addition to your buy to let portfolio. (The property would achieve £650 per month = 6.5% yield at the asking price). A great opportunity to purchase a generously sized 2 bedroom property at an affordable price.</p>
+															<div class="d-flex flex-row justify-content-end">
+																<a class="view-details-link d-flex flex-row align-items-center" href="javascript:void(0)">
+																	<span>View Details</span>
+																	<span><i class="fal fa-angle-right"></i></span>
+																</a>
+															</div>
+														</div>
+													</div>
+													<!-- Each item -->
+												</div>
+											</div>
+											<div class="tab-pane fade" id="mapview" role="tabpanel" aria-labelledby="mapview-tab">
+												<img alt="Map Image" class="img-fluid d-block" src="images/results/map-image.png" width="100%" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+				<!-- Main Content End -->
+				<!-- Footer -->
+				<footer class="site-footer">
+					<section class="container-fluid footer">
+						<div class="row">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-sm-6 col-md-3">
+										<a class="d-inline-block footer-logo" href="javascript:void(0);">
+											<img alt="Ginos Estate Agents" class="img-fluid d-block" src="images/footer/gea-footer-logo.png" />
+										</a>
+									</div>
+									<div class="col-12 col-sm-6 col-md-3">
+										<div class="footer-item">
+											<h4>Navigation</h4>
+											<ul class="list-unstyled d-flex flex-column footer-nav">
+												<li class="footer-nav-item">
+													<a class="footer-nav-link" href="javascript:void(0);">Buy</a>
+												</li>
+												<li class="footer-nav-item">
+													<a class="footer-nav-link" href="javascript:void(0);">Sell</a>
+												</li>
+												<li class="footer-nav-item">
+													<a class="footer-nav-link" href="javascript:void(0);">Fees</a>
+												</li>
+												<li class="footer-nav-item">
+													<a class="footer-nav-link" href="javascript:void(0);">Free Valuation</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-3">
+										<div class="footer-item">
+											<h4>Helpful Tools</h4>
+											<ul class="list-unstyled d-flex flex-column footer-nav">
+												<li class="footer-nav-item">
+													<a class="footer-nav-link" href="javascript:void(0);">Mortgage Calculator</a>
+												</li>
+												<li class="footer-nav-item">
+													<a class="footer-nav-link" href="javascript:void(0);">Stamp Duty Calculator</a>
+												</li>
+												<li class="footer-nav-item">
+													<a class="footer-nav-link" href="javascript:void(0);">Fee Calculator</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-3">
+										<div class="footer-item">
+											<h4>Legal</h4>
+											<ul class="list-unstyled d-flex flex-column footer-nav">
+												<li class="footer-nav-item">
+													<a class="footer-nav-link" href="javascript:void(0);">Privacy Policy</a>
+												</li>
+												<li class="footer-nav-item">
+													<a class="footer-nav-link" href="javascript:void(0);">Cookie Policy</a>
+												</li>
+												<li class="footer-nav-item">
+													<a class="footer-nav-link" href="javascript:void(0);">Terms & Conditions</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center">
+									<div class="col-12 col-md-3 d-none d-md-block">
+										<p class="text-center text-md-left">Copyright 2020 - <span>Ginos Estate Agents</span></p>
+									</div>
+									<div class="col-12 col-md-6">
+										<div class="footer-barands d-flex flex-row align-items-center justify-content-center">
+											<span>
+												<img alt="" class="img-fluid d-block" src="images/footer/rightmove.png" />
+											</span>
+											<span>
+												<img alt="" class="img-fluid d-block" src="images/footer/property-ombudsman.png" />
+											</span>
+											<span>
+												<img alt="" class="img-fluid d-block" src="images/footer/naem-propertyymark.png" />
+											</span>
+										</div>
+									</div>
+									<div class="col-12 col-md-3">
+										<p class="text-center d-md-none">Copyright 2020 - <span>Ginos Estate Agents</span></p>
+										<p class="text-center text-md-right">Site created by <a target="_blank" href="https://paolor.co.uk/">Paolo Resteghini</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</footer>
+				<!-- Footer end -->
+			</div>
+			<!-- Page layout end -->
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.navbar-toggler').on('click', function(){
+					$(this).toggleClass('active');
+					$('html').toggleClass('mm-opening');
+				});
+				$('.menubackdrop').on('click', function(){
+					$('html').removeClass('mm-opening');
+					$('.navbar-toggler').removeClass('active');
+				});
+			});
+			$(window).on('load resize', function(e){
+				var scrollHeight = $('.main-menu').outerHeight();
+				$(window).scroll(function(){
+					if ($(this).scrollTop() > scrollHeight) {
+						$('.main-menu').addClass('fixed-top');
+					} else {
+						$('.main-menu').removeClass('fixed-top');
+					}
+				});
+			});
+			$(function(){
+				$('#filterButton').on('click', function(){
+					$('.searchform').slideToggle();
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+{
+	"name": "ginos-estate-agents",
+	"version": "1.0.0",
+	"description": "PSD to HTML",
+	"main": "gulpfile.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"devDependencies": {
+		"autoprefixer": "^9.8.0",
+		"gulp": "^4.0.2",
+		"gulp-postcss": "^8.0.0",
+		"gulp-sass": "^4.1.0",
+		"bootstrap": "^4.5.0",
+		"popper.js": "^1.16.1",
+		"jquery": "^3.5.1"
+	},
+	"browserslist": [
+		"last 71 version"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@gitlab.com/rahulmoral00/ginos-estate-agents.git"
+	},
+	"keywords": [
+		"HTML5",
+		"CSS3",
+		"Bootstrap@4",
+		"SCSS"
+	],
+	"author": "Rahul Moral",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://gitlab.com/rahulmoral00/ginos-estate-agents/issues"
+	},
+	"homepage": "https://gitlab.com/rahulmoral00/ginos-estate-agents#readme"
+}

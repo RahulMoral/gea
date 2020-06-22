@@ -1,0 +1,312 @@
+.main-menu{
+    background-color: $white;
+    transition: all 0.3s linear 0s;
+    @include media-breakpoint-up(lg){
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include media-breakpoint-down(md){
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .navbar-action{
+        padding-left: 15px;
+        padding-right: 15px;
+        .navbar-toggler{
+            background-color: #102749;
+            background-image: radial-gradient(ellipse farthest-corner at left top, rgb(255,255,207) 0%, rgb(236,223,159) 4%, rgb(216,191,111) 22%, rgb(140,116,55) 46%, rgb(132,105,45) 72%, rgb(180,151,87) 100%);
+            background-size: 100% auto;
+            border: none;
+            border-radius: 3px;
+            box-shadow: none;
+            height: 47px;
+            padding: 15px;
+            position: relative;
+            transition: all 250ms ease-in-out 0s;
+            width: 52px;
+            &:active,
+            &:focus{
+                outline: none;
+            }
+            &:before{
+                background-color: white;
+                content: '';
+                display: block;
+                height: 1px;
+                left: 0;
+                margin-left: 15px;
+                position: absolute;
+                top: 15px;
+                transition: all 0.3s ease-in-out 0s;
+                width: calc(100% - 30px);
+            }
+            &:after{
+                background-color: white;
+                bottom: 15px;
+                content: '';
+                display: block;
+                height: 1px;
+                left: 0;
+                margin-left: 15px;
+                position: absolute;
+                transition: all 0.3s ease-in-out 0s;
+                width: calc(100% - 30px);
+            }
+            span{
+                background-color: white;
+                display: block;
+                height: 1px;
+                transition: all 0.3s ease-in-out 0s;
+                width: 100%;
+            }
+            &.active{
+                &:before{
+                    top: 23px;
+                    transform: rotate(45deg);
+                }
+                &:after{
+                    bottom: 23px;
+                    transform: rotate(-45deg);
+                }
+                span{
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    .site-logo{
+        flex-basis: 145px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        max-width: 145px;
+        padding-left: 15px;
+        padding-right: 35px;
+        padding-top: 20px;
+        @include media-breakpoint-down(md){
+            flex-basis: 74px;
+            max-width: 74px;
+            padding-right: 15px;
+            padding-top: 0;
+        }
+    }
+    .site-header{
+        flex-basis: calc(100% - 145px);
+        flex-grow: 0;
+        flex-shrink: 0;
+        max-width: calc(100% - 145px);
+        padding-left: 35px;
+        padding-right: 15px;
+        @include media-breakpoint-down(md){
+            flex-basis: auto;
+            max-width: none;
+            padding-left: 15px;
+        }
+        .site-announcement-bar{
+            border-bottom: 1px solid #acacac;
+            height: 44px;
+            padding: 5px 0;
+            .announcement-bar-title{
+                color: #292929;
+                font-size: 20px;
+                @include font-Titilliumweb-Bold;
+                line-height: 1.5;
+                text-transform: uppercase;
+            }
+            .top-contact{
+                .top-contact-item{
+                    color: #707070;
+                    font-size: 14px;
+                    @include font-Titilliumweb-Regular;
+                    line-height: 1.6;
+                    transition: all 0.3s ease-in-out 0s;
+                    &:not(:last-child){
+                        margin-right: 35px;
+                    }
+                    span{
+                        margin-right: 10px;
+                    }
+                    &:hover{
+                        color: #cdb364;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .site-navigation-bar{
+            .navbar-nav{
+                margin-right: 15px;
+                .nav-item{
+                    padding-bottom: 20px;
+                    padding-top: 25px;
+                    position: relative;
+                    &:not(:last-child){
+                        margin-right: 30px;
+                        @include media-breakpoint-down(lg){
+                            margin-right: 16px;
+                        }
+                    }
+                    .nav-link{
+                        color: #292929;
+                        font-size: 17px;
+                        @include font-Titilliumweb-Bold;
+                        line-height: 1.85;
+                        position: relative;
+                        transition: all 0.3s ease-in-out 0s;
+                        @include media-breakpoint-down(lg){
+                            font-size: 16px;
+                        }
+                    }
+                    &:after{
+                        background-color: #102749;
+                        background-image: linear-gradient(to bottom, #ffffcf, #d8bf6f 22%, #8c7437 46%, #84692d 72%, #b49757);
+                        bottom: 0;
+                        content: '';
+                        height: 4px;
+                        position: absolute;
+                        left: 0;
+                        transition: all 0.3s ease-in-out 0s;
+                        width: 0;
+                    }
+                    &:hover,
+                    &.active{
+                        &:after{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .navbar-button{
+                padding-bottom: 20px;
+                padding-top: 25px;
+                @include media-breakpoint-down(md){
+                    padding: 0;
+                }
+                .nav-button{
+                    background-color: #102749;
+                    background-image: radial-gradient(ellipse farthest-corner at left top, rgb(255,255,207) 0%, rgb(236,223,159) 4%, rgb(216,191,111) 22%, rgb(140,116,55) 46%, rgb(132,105,45) 72%, rgb(180,151,87) 100%);
+                    background-size: 100% auto;
+                    border-radius: 3px;
+                    color: white;
+                    font-size: 20px;
+                    @include font-Titilliumweb-Bold;
+                    line-height: 1.1;
+                    height: 47px;
+                    min-width: 180px;
+                    padding: 5px 15px;
+                    transition: all 250ms ease-in-out 0s;
+                    white-space: nowrap;
+                    @include media-breakpoint-down(md){
+                        min-width: auto;
+                    }
+                    span{
+                        &:not(:last-child){
+                            @include media-breakpoint-up(lg){
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                    &:hover,
+                    &:focus{
+                        background-size: 200% auto;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    &.fixed-top{
+        box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.15);
+    }
+}
+.mobile-menu{
+    background-color: $white;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    max-width: 440px;
+    opacity: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0 0 30px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out 0s;
+    visibility: hidden;
+    width: 440px;
+    z-index: 1060;
+    @include media-breakpoint-down(xs){
+        max-width: 260px;
+    }
+    .mobile-header{
+        border-bottom: 1px solid #acacac;
+        color: #292929;
+        font-size: 20px;
+        @include font-Titilliumweb-Bold;
+        line-height: 1.5;
+        padding: 15px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .mobile-body{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        .mobile-menu-item{
+            color: #292929;
+            font-size: 14px;
+            @include font-Titilliumweb-Regular;
+            letter-spacing: 0.1em;
+            line-height: 1.85;
+            text-transform: uppercase;
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+            &.valuation{
+                background-color: #102749;
+                background-image: radial-gradient(ellipse farthest-corner at left top, rgb(255,255,207) 0%, rgb(236,223,159) 4%, rgb(216,191,111) 22%, rgb(140,116,55) 46%, rgb(132,105,45) 72%, rgb(180,151,87) 100%);
+                background-size: 100% auto;
+                border-radius: 3px;
+                color: white;
+                font-size: 20px;
+                @include font-Titilliumweb-Bold;
+                letter-spacing: 0;
+                line-height: 1.1;
+                height: 47px;
+                min-width: 180px;
+                padding: 5px 15px;
+                transition: all 250ms ease-in-out 0s;
+                white-space: nowrap;
+                @include media-breakpoint-down(md){
+                    min-width: auto;
+                }
+                span{
+                    &:not(:last-child){
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .mobile-footer{
+        border-top: 1px solid #acacac;
+        margin-top: auto;
+        padding: 30px 30px 0;
+        .mobile-footer-item{
+            color: #707070;
+            font-size: 14px;
+            @include font-Titilliumweb-Regular;
+            line-height: 1.8;
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+            span{
+                &:not(:last-child){
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
