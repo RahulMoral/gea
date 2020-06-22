@@ -110,6 +110,9 @@
             }
         }
     }
+    .property-banner{
+        width: 100%;
+    }
     .property-details{
         @include media-breakpoint-up(md){
             margin-top: -70px;
