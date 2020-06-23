@@ -33,7 +33,7 @@
         overflow: hidden;
         position: relative;
         z-index: 2;
-        @include media-breakpoint-up(xl){
+        @include media-breakpoint-up(lg){
             position: absolute;
             right: 0;
             top: 50%;
@@ -45,7 +45,8 @@
         @media (max-width: 1364px){
             max-width: 40%;
         }
-        @include media-breakpoint-down(lg){
+        @include media-breakpoint-down(md){
+            display: none;
             flex-basis: 100%;
             flex-grow: 0;
             flex-shrink: 0;
@@ -57,11 +58,11 @@
         img{
             box-shadow: -5.818px 10.495px 18px 0px rgba(0, 0, 0, 0.16);
             width: 100%;
-            @include media-breakpoint-up(xl){
+            @include media-breakpoint-up(lg){
                 border-bottom-left-radius: 5px;
                 border-top-left-radius: 5px;
             }
-            @include media-breakpoint-down(lg){
+            @include media-breakpoint-down(md){
                 border-radius: 5px;
             }
         }
@@ -81,7 +82,7 @@
             flex-basis: 60%;
             max-width: 60%;
         }
-        @include media-breakpoint-down(lg){
+        @include media-breakpoint-down(md){
             flex-basis: 100%;
             max-width: 100%;
             padding-bottom: 0;
@@ -121,6 +122,15 @@
                 @include font-Titilliumweb-Semibold;
                 line-height: 1.28;
                 margin-bottom: 20px;
+                @include media-breakpoint-down(md){
+                    font-size: 32px;
+                }
+                @include media-breakpoint-down(sm){
+                    font-size: 28px;
+                }
+                @include media-breakpoint-down(xs){
+                    margin-bottom: 0;
+                }
             }
         }
         p{
@@ -129,6 +139,11 @@
             @include font-Titilliumweb-Regular;
             line-height: 1.7;
             margin-bottom: 30px;
+            @include media-breakpoint-down(sm){
+                font-size: 14px;
+                line-height: 1.5;
+                margin-bottom: 1rem;
+            }
         }
         .banner-property-search{
             margin-bottom: 30px;
@@ -271,6 +286,12 @@
         padding-top: 20px;
         position: relative;
         text-align: center;
+        @include media-breakpoint-down(md){
+            font-size: 32px;
+        }
+        @include media-breakpoint-down(xs){
+            font-size: 28px;
+        }
         &:before{
             background-attachment: scroll;
             background-color: transparent;
@@ -315,6 +336,12 @@
         @include font-Titilliumweb-Bold;
         line-height: 1.4;
         margin-bottom: 30px;
+        @include media-breakpoint-down(sm){
+            font-size: 32px;
+        }
+        @include media-breakpoint-down(xs){
+            font-size: 28px;
+        }
         span{
             color: #d8c075;
         }
@@ -325,6 +352,11 @@
         @include font-Titilliumweb-Regular;
         line-height: 1.8;
         margin-bottom: 30px;
+        @include media-breakpoint-down(xs){
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
         a{
             color: #d8c075;
             text-underline-position: bottom;
@@ -353,6 +385,15 @@
                 font-size: 50px;
                 @include font-Titilliumweb-Bold;
                 line-height: 1.25;
+                @include media-breakpoint-down(md){
+                    font-size: 38px;
+                }
+                @include media-breakpoint-down(sm){
+                    font-size: 32px;
+                }
+                @include media-breakpoint-down(xs){
+                    font-size: 28px;
+                }
             }
             p{
                 color: #182643;
@@ -360,6 +401,13 @@
                 @include font-Titilliumweb-Bold;
                 line-height: 1.5;
                 margin-bottom: 0;
+                @include media-breakpoint-down(md){
+                    font-size: 17px;
+                    @include font-Titilliumweb-Regular;
+                }
+                @include media-breakpoint-down(xs){
+                    font-size: 14px;
+                }
             }
         }
         .home-offer-header-action{
@@ -434,6 +482,7 @@
             text-align: center;
             @include media-breakpoint-down(lg){
                 font-size: 28px;
+                line-height: 1.25;
             }
         }
         p{
@@ -444,6 +493,10 @@
             margin-bottom: 0;
             text-align: center;
             transition: all 0.3s ease-in-out 0s;
+            @include media-breakpoint-down(sm){
+                font-size: 14px;
+                line-height: 1.25;
+            }
         }
         &:hover{
             background-color: #d8c075;
@@ -477,6 +530,15 @@
                 font-size: 50px;
                 @include font-Titilliumweb-Bold;
                 line-height: 1.25;
+                @include media-breakpoint-down(md){
+                    font-size: 38px;
+                }
+                @include media-breakpoint-down(sm){
+                    font-size: 32px;
+                }
+                @include media-breakpoint-down(xs){
+                    font-size: 28px;
+                }
             }
             p{
                 color: #182643;
@@ -484,6 +546,13 @@
                 @include font-Titilliumweb-Bold;
                 line-height: 1.5;
                 margin-bottom: 0;
+                @include media-breakpoint-down(md){
+                    font-size: 17px;
+                    @include font-Titilliumweb-Regular;
+                }
+                @include media-breakpoint-down(xs){
+                    font-size: 14px;
+                }
             }
         }
         .home-featured-header-action{
@@ -567,6 +636,9 @@
             @include font-Titilliumweb-Bold;
             line-height: 1.25;
             margin-bottom: 15px;
+            @include media-breakpoint-down(xs){
+                font-size: 28px;
+            }
         }
         p{
             color: #182643;
@@ -574,6 +646,9 @@
             @include font-Titilliumweb-Regular;
             line-height: 1.5;
             margin-bottom: 20px;
+            @include media-breakpoint-down(sm){
+                font-size: 15px;
+            }
         }
         .range-wrap{
             width: 100%;

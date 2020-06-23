@@ -6,6 +6,7 @@
         padding-right: 30px;
     }
     @include media-breakpoint-down(md){
+        background-color: #102749;
         padding-bottom: 10px;
         padding-top: 10px;
     }

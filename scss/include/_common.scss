@@ -101,6 +101,12 @@ html{
         @include media-breakpoint-up(lg){
             margin-top: 35px;
         }
+        @include media-breakpoint-down(sm){
+            font-size: 32px;
+        }
+        @include media-breakpoint-down(xs){
+            font-size: 28px;
+        }
         span{
             color: #ffc358;
         }
@@ -111,6 +117,12 @@ html{
         @include font-Titilliumweb-Light;
         line-height: 1.70;
         margin-bottom: 30px;
+        @include media-breakpoint-down(md){
+            font-size: 16px;
+        }
+        @include media-breakpoint-down(sm){
+            font-size: 14px;
+        }
     }
     .free-valuation-form{
         background-color: white;
