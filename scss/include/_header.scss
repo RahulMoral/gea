@@ -283,6 +283,10 @@
                 @include media-breakpoint-down(md){
                     min-width: auto;
                 }
+                &:after,
+                &:before{
+                    content: none;
+                }
                 span{
                     &:not(:last-child){
                         margin-right: 10px;
